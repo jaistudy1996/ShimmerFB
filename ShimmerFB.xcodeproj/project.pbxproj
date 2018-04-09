@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324B2406FE72C7CB051A7A31 /* Pods_ShimmerFB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFB0F96685DB12316793DEE /* Pods_ShimmerFB.framework */; };
 		3BA67205207BC9E400E79935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA67204207BC9E400E79935 /* AppDelegate.swift */; };
 		3BA67207207BC9E400E79935 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA67206207BC9E400E79935 /* ViewController.swift */; };
 		3BA6720A207BC9E400E79935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA67208207BC9E400E79935 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EFB0F96685DB12316793DEE /* Pods_ShimmerFB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShimmerFB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA67201207BC9E400E79935 /* ShimmerFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShimmerFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA67204207BC9E400E79935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BA67206207BC9E400E79935 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,9 @@
 		3BA6720B207BC9E400E79935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BA6720E207BC9E400E79935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BA67210207BC9E400E79935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA67216207BCA4100E79935 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		A9DE63123554A590C6088DE9 /* Pods-ShimmerFB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShimmerFB.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShimmerFB/Pods-ShimmerFB.release.xcconfig"; sourceTree = "<group>"; };
+		C36234C78E0FEEB8B3D7DFC8 /* Pods-ShimmerFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShimmerFB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShimmerFB/Pods-ShimmerFB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324B2406FE72C7CB051A7A31 /* Pods_ShimmerFB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2990CEC7A1FFB22431E5F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C36234C78E0FEEB8B3D7DFC8 /* Pods-ShimmerFB.debug.xcconfig */,
+				A9DE63123554A590C6088DE9 /* Pods-ShimmerFB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3BA671F8207BC9E400E79935 = {
 			isa = PBXGroup;
 			children = (
 				3BA67203207BC9E400E79935 /* ShimmerFB */,
 				3BA67202207BC9E400E79935 /* Products */,
+				0C2990CEC7A1FFB22431E5F2 /* Pods */,
+				BC265E0E08D97EE8A256B231 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 		3BA67203207BC9E400E79935 /* ShimmerFB */ = {
 			isa = PBXGroup;
 			children = (
+				3BA67216207BCA4100E79935 /* BridgeHeader.h */,
 				3BA67204207BC9E400E79935 /* AppDelegate.swift */,
 				3BA67206207BC9E400E79935 /* ViewController.swift */,
 				3BA67208207BC9E400E79935 /* Main.storyboard */,
@@ -64,6 +82,14 @@
 			path = ShimmerFB;
 			sourceTree = "<group>";
 		};
+		BC265E0E08D97EE8A256B231 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EFB0F96685DB12316793DEE /* Pods_ShimmerFB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BA67213207BC9E400E79935 /* Build configuration list for PBXNativeTarget "ShimmerFB" */;
 			buildPhases = (
+				C91DFE890352F7EC889A6AA4 /* [CP] Check Pods Manifest.lock */,
 				3BA671FD207BC9E400E79935 /* Sources */,
 				3BA671FE207BC9E400E79935 /* Frameworks */,
 				3BA671FF207BC9E400E79935 /* Resources */,
+				78E882A2D6898DC0861EF755 /* [CP] Embed Pods Frameworks */,
+				833922B0F7040A3AB578098B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78E882A2D6898DC0861EF755 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShimmerFB/Pods-ShimmerFB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Shimmer/Shimmer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shimmer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShimmerFB/Pods-ShimmerFB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		833922B0F7040A3AB578098B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShimmerFB/Pods-ShimmerFB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C91DFE890352F7EC889A6AA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShimmerFB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BA671FD207BC9E400E79935 /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		3BA67214207BC9E400E79935 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36234C78E0FEEB8B3D7DFC8 /* Pods-ShimmerFB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -280,6 +364,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vtinfo.jayant.arora.ShimmerFB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ShimmerFB/BridgeHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,6 +372,7 @@
 		};
 		3BA67215207BC9E400E79935 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9DE63123554A590C6088DE9 /* Pods-ShimmerFB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +381,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vtinfo.jayant.arora.ShimmerFB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ShimmerFB/BridgeHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
